@@ -1,0 +1,365 @@
+/* CSS Document */
+
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates);*/
+
+@font-face { font-family: Montserrat-Regular; 
+			 src: url('../fonts/Montserrat-Regular.ttf'); } 
+
+
+body{
+color: #909090;
+padding: 0px;
+margin: auto;
+background-color: white;
+font-family: 'Montserrat-Regular', sans-serif;
+
+
+}
+
+div, p, ul, h2, h3, h4, img {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  height:800px;
+  position: relative;
+  margin: 0 auto;
+  background-color: black;
+
+}
+
+#header{
+background: url(../images/fondo_marmol_rosa.jpg);
+background-size: cover;
+height:130px;
+}
+
+#banner_marca {
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 100%;
+
+}
+
+#top_bar {
+height: 50px;
+background-color: #FFFFFF;
+border-style: solid;
+border-width: 1px;
+border-color:#CCCCCC;
+}
+
+
+
+#top_bar ul.menu {
+  display: block;
+  margin:auto;
+  width: 95%;
+  height:100%;
+  background-color: white;
+}
+
+
+#top_bar ul.menu li {
+  padding-top: 15px;
+  font-size: 15px;
+  width: 11.11%; /*porque son 5 elementos*/
+  margin:auto;
+  text-align: center;
+  float: left;
+}
+
+
+.cuerpo_principal {
+	padding:30px;
+	margin: auto;
+	height: 100%;
+	background-color: white;
+	
+}
+
+
+
+
+/* Inicio*/
+#cuerpo_principal_inicio{
+  height: 1000px;
+}
+
+
+
+/********************************* IMAGE GALLERY BEGINNING******************************************/
+
+#inicio_gallery{
+  background-image: url(../images/ss20_21/5inicio.jpg);
+  background-size: cover;
+
+}
+
+
+/** {box-sizing:border-box};*/
+
+/* Slideshow container */
+.slideshow-container {
+  height: 500px;
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+    
+}
+
+
+.cover{
+	width: 100%;
+	height:100%;
+	object-fit:cover;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/********************************* IMAGE GALLERY END ******************************************/
+
+
+
+/* Create three equal columns that floats next to each other */
+
+.column_container{
+	display:block;
+	width:80%;
+	margin:auto;
+	text-align: center;
+	background-color: white;
+	padding: 15px;
+
+}
+
+
+.column {
+ 
+  float: left;
+  width: 50%;
+  padding: 0px;
+  font-size: 17px;
+  background-color: white;
+ 
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.imagen_inicio{
+	display:block;
+	margin:auto;
+	width: 50%;
+	
+}
+
+
+
+
+#footer{
+	padding:15px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #CCCCCC;
+	color:#505050;
+}
+
+
+
+/*SS 20-21 */
+
+#cuerpo_principal_ss2021{
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 2600px;
+}
+
+
+#banner_spring_summer{
+  width: 100%;
+  padding-top: 0px;
+
+}
+
+
+
+
+/*Sneakers*/
+
+#cuerpo_principal_sneakers{
+  height: 900px;
+}
+
+.gallery_container{
+  width: 90%;
+  margin:auto;
+  display:block;
+  
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+.responsive {
+  padding: 6px 6px;
+  float: left;
+  width: 23.3%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/*Cómo comprar */
+
+
+#cuerpo_principal_como_comprar{
+  height: 450px;
+}
+
+#imagen_como_comprar{
+display:block;
+margin:auto;
+width:60%;
+
+}
+
+
+/* Contacto */
+
+
+#cuerpo_principal_contacto{
+  height: 450px;
+}
+
+#imagen_contacto{
+display:block;
+margin:auto;
+width:60%;
+
+}
+
+
